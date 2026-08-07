@@ -1,9 +1,41 @@
+import { useEffect, useRef } from "react";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, HeartHandshake, ShieldCheck, Sparkles, Star, Zap } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import { Button } from "@/components/ui/button";
 import { CampaignCard } from "@/components/CampaignCard";
 import { campaigns, leaderboard, naira, recentDonors, reviews } from "@/data/campaigns";
+
+function AdBanner() {
+  const adRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!adRef.current) return;
+
+    const script = document.createElement("script");
+
+    script.src =
+      "https://pl30738806.effectivecpmnetwork.com/21/29/21/21292166f0f387f479c164214a289d24.js";
+
+    script.async = true;
+
+    adRef.current.appendChild(script);
+
+    return () => {
+      if (adRef.current) {
+        adRef.current.innerHTML = "";
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={adRef}
+      className="mx-auto flex min-h-[90px] max-w-6xl items-center justify-center overflow-hidden px-4 py-4"
+    />
+  );
+}
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -84,6 +116,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <AdBanner />
 
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="grid gap-4 sm:grid-cols-3">
