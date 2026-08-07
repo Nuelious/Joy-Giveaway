@@ -10,7 +10,7 @@ const GROUP_TARGET = 10;
 const WHATSAPP_URL =
   "https://wa.me/?text=" +
   encodeURIComponent(
-    "I just entered the HopeShare giveaway and I collected ₦2,000 - they support families in need. Check it out! https://joy-lift-giveawawy.lovable.app",
+    "I just entered the HopeShare giveaway and I collected ₦2,000 - they support families in need. Check it out! https://joy-giveaway-qv35-five.vercel.app/",
   );
 
 type Props = {
