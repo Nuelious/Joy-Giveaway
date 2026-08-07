@@ -37,17 +37,6 @@ function Home() {
       document.body.removeChild(script);
     };
   }, []);
-  useEffect(() => {
-  const script = document.createElement("script");
-  script.src = "https://pl30738807.effectivecpmnetwork.com/e23db6dfcbc8eb8c595cfbca197b2abb/invoke.js";
-  script.async = true;
-  script.setAttribute("data-cfasync", "false");
-  document.body.appendChild(script);
-
-  return () => {
-    document.body.removeChild(script);
-  };
-}, []);
   return (
     <div>
       <section className="gradient-soft">
