@@ -13,7 +13,7 @@ export const Route = createFileRoute("/giveaway")({
         content:
           "Skip the browsing and enter the ₦20,000 HopeShare weekend giveaway right now. Free entry, name only.",
       },
-      { property: "og:title", content: "Instant giveaway entry — HopeShare" },
+      { property: "og:title", content: "Get Instant giveaway entry — HopeShare" },
       {
         property: "og:description",
         content: "Enter the ₦20,000 weekend giveaway now — free, name only.",
