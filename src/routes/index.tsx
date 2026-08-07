@@ -51,7 +51,7 @@ function Home() {
               </Button>
               <Button asChild size="lg" variant="secondary">
                 <Link to="/giveaway">
-                  <Zap className="size-4" /> Skip everything — start giveaway
+                  <Zap className="size-4" /> Skip everything — Get Your giveaway
                 </Link>
               </Button>
             </div>
