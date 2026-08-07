@@ -43,10 +43,9 @@ export function SiteFooter() {
           </ul>
         </div>
         <div className="text-sm text-muted-foreground">
-          <h3 className="font-semibold text-foreground">Demo notice</h3>
+          <h3 className="font-semibold text-foreground">Donation notice</h3>
           <p className="mt-3">
-            This is a design prototype. No real payments are processed and no real prizes are
-            awarded. All donors, entries and reviews are sample data.
+            This is all possible because of our amazing donors and supporters. Your generosity, trust, and belief in our mission are what turn ideas into real impact. Thank you for standing with us and making this work happen.
           </p>
         </div>
       </div>
