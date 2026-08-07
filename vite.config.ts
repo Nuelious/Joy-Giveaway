@@ -1,4 +1,9 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+
 export default defineConfig({
-pligins: [react()]});
+  tanstackStart: {
+    server: {
+      entry: "src/server.ts",
+    },
+  },
+});
