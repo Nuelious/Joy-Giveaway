@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, HeartHandshake, ShieldCheck, Sparkles, Star, Zap } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
@@ -25,6 +26,17 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://pl30738806.effectivecpmnetwork.com/21/29/21/21292166f0f387f479c164214a289d24.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <div>
       <section className="gradient-soft">
