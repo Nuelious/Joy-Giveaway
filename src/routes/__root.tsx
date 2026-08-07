@@ -13,7 +13,6 @@ import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Toaster } from "@/components/ui/sonner";
-import { TopAds, BottomAds } from "@/components/Ads";
 
 function NotFoundComponent() {
   return (
@@ -134,12 +133,10 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
         <SiteHeader />
-        <TopAds />
         <main className="flex-1">
           {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />
         </main>
-        <BottomAds />
         <SiteFooter />
       </div>
       <Toaster position="top-center" />
