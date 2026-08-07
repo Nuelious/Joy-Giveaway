@@ -37,6 +37,17 @@ function Home() {
       document.body.removeChild(script);
     };
   }, []);
+  useEffect(() => {
+  const script = document.createElement("script");
+  script.src = "https://pl30738807.effectivecpmnetwork.com/e23db6dfcbc8eb8c595cfbca197b2abb/invoke.js";
+  script.async = true;
+  script.setAttribute("data-cfasync", "false");
+  document.body.appendChild(script);
+
+  return () => {
+    document.body.removeChild(script);
+  };
+}, []);
   return (
     <div>
       <section className="gradient-soft">
@@ -93,6 +104,10 @@ function Home() {
               <p className="text-xs text-muted-foreground">Latest gift</p>
               <p className="text-sm font-semibold">Grace E. gave {naira(25000)}</p>
             </div>
+            <div
+             id="container-e23db6dfcbc8eb8c595cfbca197b2abb"
+             className="mt-10 flex justify-center"
+            />
           </div>
         </div>
       </section>
