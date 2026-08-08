@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, Gift, ShieldCheck, Star } from "lucide-react";
 import { Countdown } from "@/components/Countdown";
@@ -24,6 +25,13 @@ export const Route = createFileRoute("/giveaway")({
 });
 
 function GiveawayPage() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://pl30738806.effectivecpmnetwork.com/21/29/21/21292166f0f387f479c164214a289d24.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+  }, []);
   return (
     <div className="gradient-soft">
       <div className="mx-auto grid max-w-5xl gap-8 px-4 py-12 lg:grid-cols-2 lg:py-16">
